@@ -32,6 +32,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#for documentation we require redcarpet
+#gem 'redcarpet'
+
+
+#Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser. Among Nokogiri's many features is the ability to search documents via XPath or CSS3 selectors. XML is like violence -
+# if it doesn’t solve your problems, you are not using enough of it.
+gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
