@@ -24,6 +24,18 @@ The following **optional** features are implemented:
 * [x] User can leave a comment on a post.
 * [ ] User can add "tags" to a post, and filter posts by tag. 
 
+The following **additional** features are implemented:
+
+- [ ] List anything else that you can get done to improve the app functionality!
+
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+![Video Walkthrough](blog/blog_video.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
