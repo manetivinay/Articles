@@ -12,8 +12,6 @@ URL: **https://enigmatic-refuge-71951.herokuapp.com/**
 
 The following **required** functionality is complete:
 
-> HINT: mark the items you completed with [x]
-
 * [x] User can create a new post, formatted using the Markdown language.
 * [x] User can edit an existing post.
 * [x] There is one post that introduces the App Creator with name, picture.
@@ -22,32 +20,9 @@ The following **required** functionality is complete:
 * [x] User can submit a search term to find all posts by with titles containing the search term.
 
 The following **optional** features are implemented:
-* [ ] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
 * [ ] User can see how many views a post has. 
 * [x] User can leave a comment on a post.
 * [ ] User can add "tags" to a post, and filter posts by tag. 
-
-> HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
-
-## Video Walkthrough 
-
-Here's a walkthrough of implemented user stories:
-
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)` 
-> 
-
-![Video Walkthrough](/path/to/your/gif/file)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
