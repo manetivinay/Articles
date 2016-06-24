@@ -6,14 +6,13 @@
 </head>
 
 <div class="container">
-  <h1>Vinay's Blog</h1>
+  <%= render 'nav_bar' %>
+  <h1>Welcome to Blog Application</h1>
   <span style="margin-left:2px; margin-top:5px;"></span>
 
   <h3> My First Rails Application for CoderSchool!</h3>
   <span style="margin-left:2px; margin-top:5px;"></span>
   <%= render @articles %>
-
-
   <br>
   <%= button_to 'Create New Article', new_article_path, :class => 'btn btn-large btn-primary', :method => :get %>
 </div>

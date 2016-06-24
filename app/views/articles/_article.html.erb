@@ -2,7 +2,8 @@
   <div class="col-sm-8">
     <div class="card card-center">
       <div class="card-block">
-        <h4 class="card-title"><%= article.title %></h4>
+        <h1 class="card-title"><%= link_to article.title, article %></h1>
+
         <p class="card-text"><%= markdown(article.text) %></p>
       </div>
       <div class="card-footer">
