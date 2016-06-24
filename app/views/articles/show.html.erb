@@ -1,37 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
+<div class="container">
+  <div class="row" style="margin-top:180px">
+    <div class=".col-md-6 .col-md-offset-3">
+      <div class="col-sm-8">
+        <div class="card">
+          <h3 class="card-header" style="background-color: #0275D8; color: #ffffff">Your Message</h3>
 
-<table id="vertical">
-  <tr>
-    <th>Title</th>
-    <td><%= @article.title %></td>
-  </tr>
-  <tr>
-    <th>Message</th>
-    <td><%= @article.text %></td>
-  </tr>
-</table>
+          <div class="card-block">
+            <h4 class="card-title card-inverse card-info text-xs-center">Title</h4>
 
-<br>
-<br>
+            <p class="card-text card-block"><%= @article.title %></p>
 
-<h2>Comments:- </h2>
-<%= render @article.comments %>
+            <h4 class="card-title card-inverse card-info text-xs-center">Message</h4>
+
+            <p class="card-text card-block"><%= @article.text %></p>
+
+            <div class=".col-md-6 .col-md-offset-3">
+              <div class="card">
+                <div class="card-header" style="background-color: #ee3f3f; color: #ffffff">
+                  Comments
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <%= render @article.comments %>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class=".col-md-6 .col-md-offset-3">
+              <div class="card">
+                <div class="card-header" style="background-color: #0275D8; color: #ffffff">
+                  Add Comments
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <%= render 'comments/form' %>
+                  </p>
+                </div>
+              </div>
+            </div>
 
 
-
-<h2>Add Comments:-</h2>
-<%= render 'comments/form' %>
-
-
-<%= link_to 'Create New Article', 'new' %>  &nbsp; &nbsp;
-<%= link_to 'show list of Articles', articles_path %>  &nbsp; &nbsp;
-<%= link_to 'Edit', edit_article_path(@article) %><br>
-
-</body>
-</html>
+            <%= link_to 'Create New Article', 'new', class: 'btn btn-primary' %>  &nbsp; &nbsp;
+            <%= link_to 'show list of Articles', articles_path, class: 'btn btn-success' %>  &nbsp; &nbsp;
+            <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-warning' %><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

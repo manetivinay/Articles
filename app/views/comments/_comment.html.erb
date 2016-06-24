@@ -1,17 +1,19 @@
 <p>
-  <strong>Commenter</strong>
-  <%= comment.commenter %>
+<h5><span class="label label-info"><strong>Commenter </strong></span></h5>
+<%= comment.commenter %>
 </p>
 
 <p>
-  <strong>Comment</strong>
-  <%= comment.body %>
-
-
+<h5><span class="label label-info"><strong>Comment </strong></span></h5>
+<%= comment.body %>
 <p>
+
+  <br>
   <%= link_to 'Destroy Comment', [comment.article, comment],
               method: :delete,
-              data: {confirm: 'Are you sure you want to delete comment ?'} %>
+              data: {confirm: 'Are you sure?'}, class: 'btn btn-primary' %>
 </p>
+
+<hr style="width: 100%; color: black; height: 1px; background-color:grey;" />
 
 </p>

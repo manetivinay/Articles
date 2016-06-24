@@ -16,14 +16,14 @@
 
     <p>
       <%= f.label :title %><br>
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :style => 'width:500px;' %>
     </p>
     <p>
       <%= f.label :Message %><br>
-      <%= f.text_field :text %>
+      <%= f.text_area :text, :style => 'width:500px; height:100px;' %>
     </p>
 
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Create Article', :class  => 'btn btn-primary' %>
     </p>
 <% end %>

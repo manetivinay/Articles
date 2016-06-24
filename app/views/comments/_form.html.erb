@@ -1,15 +1,15 @@
 <%= form_for ([@article, @article.comments.build]) do |f| %>
     <p>
-      <%= f.label :Commenter %>
-      <%= f.text_field :commenter %>
+      <%= f.label :Commenter, class: 'label label-primary' %><br>
+      <%= f.text_field :commenter, :style => 'width:500px;' %>
     </p>
 
     <p>
-      <%= f.label :Comment %>
-      <%= f.text_area :body %>
+      <%= f.label :Comment, class: 'label label-primary'%><br>
+      <%= f.text_area :body, :style => 'width:500px; height:100px;'  %>
     </p>
 
     <p>
-      <%= f.submit %>
+      <%= f.submit 'Create Comment', :class  => 'btn btn-primary'%>
     </p>
 <% end %>

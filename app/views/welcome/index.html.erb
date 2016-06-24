@@ -1,3 +1,31 @@
-<h1>Welcome to rails</h1>
-<%= link_to 'View List of Articles', controller: 'articles' %> <br>
-<%= link_to 'Create New Article', new_article_path %>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      body {
+          background-image: url('images/nature_background.jpg');
+      }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!--Navbar -->
+  <div class="container">
+  </div>
+  <!--End Navbar -->
+
+  <!--1st Large Banner Image -->
+  <div class="wrapper">
+    <div class="sol-sm-6">
+      <h1 id="text" style="color: #ee3f3f">Welcome to Blog Application</h1>
+
+      <div>
+        <%= link_to 'Create New Article', new_article_path, class: 'btn btn-info' %>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
