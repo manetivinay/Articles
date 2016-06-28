@@ -35,9 +35,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'redcarpet'
 
 #bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap'
 
 gem 'devise'
+
+gem 'devise-bootstrap-views'
+
 
 gem 'rails_12factor', group: :production
 

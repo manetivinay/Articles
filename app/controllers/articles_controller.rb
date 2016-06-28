@@ -1,8 +1,6 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: "admin", password: "admin",
-                               except: [:index, :show]
-
+  before_filter :authenticate_user!, only: [:edit, :new, :update, :destroy]
 
   def index
     if params[:search]
@@ -14,6 +12,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @comment = @article.comments.build
   end
 
   def new

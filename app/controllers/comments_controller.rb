@@ -5,7 +5,12 @@ class CommentsController < ApplicationController
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(create_params)
-    redirect_to article_path(@article)
+
+    if @comment.save
+      redirect_to article_path(@article)
+    else
+      render 'articles/show'
+    end
   end
 
   def destroy
@@ -17,8 +22,8 @@ class CommentsController < ApplicationController
   end
 
   private
-    def create_params
-      # code here
-      params.require(:comment).permit(:commenter, :body)
-    end
+  def create_params
+    # code here
+    params.require(:comment).permit(:commenter, :body)
+  end
 end
