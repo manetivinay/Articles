@@ -17,7 +17,7 @@
 
             <div class=".col-md-6 .col-md-offset-3">
               <div class="card">
-                <div class="card-header" style="background-color: #ee3f3f; color: #ffffff">
+                <div class="card-header" style="background-color: #ff9e7b; color: #ffffff">
                   Comments
                 </div>
                 <div class="card-block">
@@ -34,20 +34,20 @@
                   Add Comments
                 </div>
                 <div class="card-block">
-                <p class="card-text">
-                  <%= render 'comments/form' %>
-                </p>
+                  <p class="card-text">
+                    <%= render 'comments/form' %>
+                  </p>
+                </div>
               </div>
             </div>
+
+
+            <%= link_to 'Create New Article', 'new', class: 'btn btn-primary' %>  &nbsp; &nbsp;
+            <%= link_to 'show list of Articles', articles_path, class: 'btn btn-success' %>  &nbsp; &nbsp;
+            <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-warning' %><br>
           </div>
-
-
-          <%= link_to 'Create New Article', 'new', class: 'btn btn-primary' %>  &nbsp; &nbsp;
-          <%= link_to 'show list of Articles', articles_path, class: 'btn btn-success' %>  &nbsp; &nbsp;
-          <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-warning' %><br>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
