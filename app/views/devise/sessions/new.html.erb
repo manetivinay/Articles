@@ -1,4 +1,4 @@
-<%= devise_error_messages! %>
+<%= bootstrap_devise_error_messages! %>
 <div class="container">
   <div style="padding-top: 30px;">
     <div class="card card-inverse card-info">
@@ -8,8 +8,8 @@
       <div class="card-block">
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {role: "form"}) do |f| %>
             <div class="field_with_errors">
-              <%= f.label :email %>
-              <%= f.email_field :email, autofocus: true, class: "form-control" %>
+              <%= f.label :username %>
+              <%= f.text_field :username, autofocus: true, class: "form-control" %>
             </div>
             <div class="field_with_errors" style="margin-top: 10px">
               <%= f.label :password %>
@@ -30,6 +30,3 @@
     </div>
   </div>
 </div>
-
-
-
